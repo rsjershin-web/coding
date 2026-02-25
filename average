@@ -1,0 +1,6 @@
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+nums = [15, 25, 35, 45]
+result = calculate_average(nums)
+print("Average:", result)
