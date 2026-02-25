@@ -1,0 +1,13 @@
+def diesel_efficiency(r, rc, gamma=1.4):
+    """
+    Calculate Diesel cycle efficiency
+    
+    r  : Compression ratio
+    rc : Cutoff ratio
+    gamma : Specific heat ratio
+    """
+    term1 = 1 / (r ** (gamma - 1))
+    term2 = (rc ** gamma - 1) / (gamma * (rc - 1))
+    efficiency = 1 - (term1 * term2)
+    return efficiency
+
