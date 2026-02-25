@@ -1,0 +1,6 @@
+obtained_marks = 450
+total_marks = 500
+
+percentage = (obtained_marks / total_marks) * 100
+
+print("Percentage:", percentage, "%")
