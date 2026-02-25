@@ -1,0 +1,11 @@
+def thermal_efficiency(work_output, heat_input):
+    if heat_input == 0:
+        return 0
+    return work_output / heat_input
+
+# Example values
+W = 500  # kJ
+Q_in = 1000  # kJ
+
+efficiency = thermal_efficiency(W, Q_in)
+print(f"Thermal Efficiency: {efficiency:.2f} or {efficiency*100:.1f}%")
